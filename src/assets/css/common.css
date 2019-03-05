@@ -1,0 +1,265 @@
+html,body{
+	background: #f6f7fb;
+}
+html,body{ -webkit-tap-highlight-color: rgba(0,0,0,0); }
+input{
+  -webkit-appearance: none;
+}
+i{
+  font-style:normal;
+}
+.color-999{
+    color:#999;
+}
+.container{
+	padding: 0 15px;
+}
+/*重置按钮样式*/
+.van-button {
+    border-radius: 4px;
+    font-size: 16px;
+}
+.van-button--danger{
+	background: #FD6562;
+	border-color: #FD6562;
+}
+.van-button--round {
+    border-radius: 50px;
+}
+.van-button--info{
+  background: #4A88FB;
+  color: #fff;
+  border: none;
+}
+.van-tabs--line{
+	padding-top: 40px;
+}
+.van-button--infoRound{
+  background: #4A88FB;
+  color: #fff;
+  border: none;
+  box-shadow:0px 2px 20px 0px #4A88FB;
+}
+.van-button--cant{
+  background: #ddd;
+  color: #999CAA;
+  border: none;
+}
+.van-button--back{
+  background: #71A0F8;
+	box-shadow:0px 2px 20px 0px rgba(81,137,243,1);
+	border:none;
+
+}
+.van-button--large{
+	line-height: 42px;
+	height: 44px;
+}
+.van-button::before {
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    border: inherit;
+    border-color: #fff;
+    background-color: #fff;
+    border-radius: inherit;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.van-button:active::before {
+    opacity: .15;
+}
+/*flex*/
+.flex{
+	display: flex;
+	display: -webkit-flex;
+}
+.flexIn{
+	display: inline-flex;
+	display: -webkit-inline-flex;
+}
+
+/*重置tabbar*/
+
+.vantItem .van-tabs__nav--line{
+	height:43px;
+	padding-bottom: 0;
+
+  /**add**/
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.vantItem .van-tabs--line .van-tabs__wrap{
+	height:43px;
+}
+.vantItem.van-tabs .van-tabs__wrap.van-tabs__wrap--scrollable .van-tab{
+	flex: unset;
+}
+.vantItem .van-tabs--line .van-tabs__wrap{
+	height: 40px;
+}
+.vantItem .van-tabs__line{
+	background: transparent;
+	height: 0;
+	display: none;
+}
+.vantItem .van-tab{
+	line-height: 40px;
+	color: #333;
+}
+.vantItem .van-tab i{
+	font-style: normal;
+	color: #696969;
+}
+.vantItem .van-tab--active,
+.vantItem .van-tab--active i{
+	color:#4A88FB;
+	font-weight: normal;
+}
+/* .vantItem [class*=van-hairline]::after{
+	border: none;
+} */
+.vantItem .van-cell{
+	align-items: center;
+	justify-content: flex-start;
+	position: relative;
+}
+/*重置确认框*/
+body .van-dialog{
+	width: auto;
+	left: 68px;
+	right: 68px;
+	transform:translate3d(0,0,0);
+	border-radius: 12px;
+	top:30%;
+}
+body .van-dialog__confirm,
+body .van-dialog__confirm:active{
+	color: #4A88FB;
+}
+body .van-dialog .van-button--default{
+	color: #4A88FB;
+}
+body .van-dialog__content{
+	font-size: 13px;
+	color: #373D46;
+	line-height: 18px;
+	padding-top: 5px;
+	padding-bottom: 10px;
+}
+body .van-dialog__message--has-title{
+	padding-bottom: 12px;
+}
+/*职能组 重置*/
+.group .van-cell{
+	line-height: 60px;
+	padding: 0 0;
+	color: #3D3E43;
+	font-size: 16px;
+	justify-content: space-between;
+}
+.group .van-cell__title div{
+	display: flex;
+	justify-content: flex-start;
+	align-content: center;
+	align-items: center;
+	padding-left: 20px;
+}
+
+.group .icon-group{
+		width: 35px;
+		height: 35px;
+		background: url(../images/organizition@2x.png) 0 0 no-repeat;
+		background-size: 100% 100%;
+		border-radius: 50%;
+		margin-right:10px ;
+	}
+.group .van-cell__right-icon{
+	margin-right: 10px;
+	align-self: center;
+}
+.group .van-collapse-item__content{
+	padding: 0;
+}
+.group .van-cell:not(:last-child)::after,
+.group .van-hairline--top-bottom::after{
+	border: none;
+}
+.group .line{
+	height: 1px;
+	position: absolute;
+	bottom: 0;
+	left: 65px;
+	right: 12px;
+	background: #EEF1F6;
+
+}
+.mat54{
+	margin-top: 54px;
+}
+.mat64{
+	margin-top: 64px;
+}
+.backGrey .van-search .van-cell{
+	border-color: #EEE7E7;
+}
+/*小兔子提示*/
+.nodata{
+	/*margin-top: 40px;*/
+  margin-top:30%;
+}
+.nodata img{
+    width: 2.4rem;
+    height: 2.4rem;
+	margin: 0 auto;
+    display: block;
+    /*width: 50%;*/
+	box-sizing: border-box;
+
+}
+.nodata p{
+	margin: 0;
+	color: #999CAA;
+	/*font-size: 18px;*/
+    font-size:0.32rem;
+	padding-top: 36px;
+}
+
+.staffsBack .van-loading,
+.list .van-loading{
+	width: 16px;
+    height: 16px;
+    margin-right: 5px;
+	margin-top: 0;
+}
+.schedulelist .van-tabs--line{
+	padding-top: 43px;
+}
+.schedulelist .van-list__finished-text{
+	display: none;
+}
+.schedulelist .van-tabs__wrap{
+	position: fixed;
+	top: 104px;
+	left: 15px;
+	right: 15px;
+}
+.meet .van-cell__title{
+  width: 100%;
+}
+input,textarea{
+  outline:none!important;
+}
+.van-list__loading .van-loading__circular circle{
+	display: none;
+}
+@media screen and (max-width: 330px){
+	.vantItem .van-tab,
+	.vantItem .van-tag--large{
+		font-size: 12px;
+	}
+}
